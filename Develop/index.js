@@ -2,7 +2,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// init with questions
 function questions() {
     return inquirer.prompt([
     {
@@ -23,6 +23,36 @@ function questions() {
         message: 'Enter a description of your project'
     },
     {
+        type: 'confirm',
+        name: 'confirmImg',
+        message: 'Would you like to include an image or video of your deployed project?',
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'img',
+        message: 'Provide a filename for the image or video',
+        when: ({ confirmImg }) =>{
+            if (confirmImg) return true;
+            else return false;
+        }
+    },
+    {
+        type: 'confirm',
+        name: 'confirmLink',
+        message: 'Would you like to include a link to the deployed project?',
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'link',
+        message: 'Provide a link to the deployed project',
+        when: ({ confirmLink }) =>{
+            if (confirmLink) return true;
+            else return false;
+        }
+    },
+    {
         type: 'input',
         name: 'installation',
         message: 'How do you install your project?'
@@ -33,10 +63,10 @@ function questions() {
         message: 'How do you use your project?'
     },
     {
-        type: 'checkbox',
-        name: 'liscense',
-        message: 'What liscense does this project use?',
-        choices: ['Apache 2.0', 'GNU GPLv3', 'MIT', 'ISC', 'None']
+        type: 'list',
+        name: 'license',
+        message: 'What license does this project use?',
+        choices: ['Apache_2.0', 'GNU_GPLv3', 'MIT', 'ISC', 'None']
     },
     {
         type: 'input',
@@ -78,7 +108,7 @@ function questions() {
     });
 };
 
-// TODO: Create a function to write README file
+// write README file
 function writeToFile(fileName, data) {
     return new Promise((resolve,reject) =>{
         fs.writeFile('dist/' + fileName + '.md', data, error =>{
@@ -94,10 +124,4 @@ function writeToFile(fileName, data) {
     });
 };
 
-// TODO: Create a function to initialize app
-function init() {
-    questions();
-}
-
-// Function call to initialize app
-init();
+questions(); //init
