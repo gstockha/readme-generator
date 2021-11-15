@@ -1,14 +1,27 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "conjure professional looking readme files with node",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "gstockha",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gstockha/readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "node",
+    "generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/gstockha/readme-generator/issues"
+  },
+  "homepage": "https://github.com/gstockha/readme-generator#readme"
 }
