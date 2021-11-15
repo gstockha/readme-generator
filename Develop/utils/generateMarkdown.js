@@ -13,23 +13,22 @@ function renderLicense(license) {
   if (license === "Apache_2.0") return `[Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)`;
   if (license === "GNU_GPLv3") return `[GNU GLPv3](https://choosealicense.com/licenses/gpl-3.0/)`;
   if (license === "MIT") return `[MIT](https://choosealicense.com/licenses/mit/)`;
-  if (license === "ISC") return `[ISC](https)://choosealicense.com/licenses/isc/)`;
+  if (license === "ISC") return `[ISC](https://choosealicense.com/licenses/isc/)`;
 }
 
 function generateLink(link){
   if (!link) return ``;
   if (link){
   return ` 
-  ${link}`;
+  ${link}
+   `;
   }
 }
 
 function generateImg(img,title){
   if (!img) return ``;
   if (img){
-    return (`
-
-    ![${title}](assets/${img})
+    return (`![${title}](assets/${img})
     
     `);
   }

@@ -5,6 +5,7 @@
   Create professional-looking README.md files with nothing but node.js, inquirer.js, and shields.io!
    
   https://github.com/gstockha/readme-generator
+   
   ![README Generator](assets/code.jpg)
     
     
@@ -19,19 +20,19 @@
   
   ## Installation
 
-  Just fork the repository on github, install node, and install inquirer!
+  Just for the repository on github, install node, and install inquirer!
 
   ## Usage
 
-  Simply type 'node index.js' in the terminal of your choice. From there, you will be prompted with an array of questions.
+  Simply type 'node index.js' in the terminal. From there, you will be prompted with an array of questions.
 
   ## license
 
-  [MIT]https://choosealicense.com/licenses/mit/
+  [MIT](https://choosealicense.com/licenses/mit/)
 
   ## Contributing
 
-  Currently no other users but gstockha can contribute, but this might change soon!
+  Currently no other but gstockha can contribute.
 
   ## Tests
 
