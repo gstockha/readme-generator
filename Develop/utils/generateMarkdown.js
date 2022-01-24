@@ -47,7 +47,7 @@ function generateMarkdown(data) {
 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [license](#license)
+  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -75,6 +75,7 @@ function generateMarkdown(data) {
   ## Questions
 
   Reach out to me via email with any questions you may have ${data.email}
+  
   You can view my github repos on [github.com](https://github.com/${data.github}?tab=repositories)
 `;
 }
