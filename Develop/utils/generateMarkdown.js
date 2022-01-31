@@ -60,7 +60,7 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  ## license
+  ## License
 
   ${renderLicense(data.license)}
 

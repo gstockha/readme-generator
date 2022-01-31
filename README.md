@@ -13,7 +13,7 @@
 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [license](#license)
+  * [License](#license)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -26,7 +26,7 @@
 
   Simply type 'node index.js' in the terminal. From there, you will be prompted with an array of questions.
 
-  ## license
+  ## License
 
   [MIT](https://choosealicense.com/licenses/mit/)
 
