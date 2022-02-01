@@ -4,9 +4,13 @@
 
   Create professional-looking README.md files with nothing but node.js, inquirer.js, and shields.io!
    
-  https://github.com/gstockha/readme-generator
+  https://github.com/gstockha/readme-machine
    
-  ![README Generator](assets/code.jpg)
+  
+
+https://user-images.githubusercontent.com/54012873/151927459-c4a81df5-06e2-495e-acf1-4e548b7dd1e5.mp4
+
+
     
     
   ## Table of Contents
